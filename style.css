@@ -547,6 +547,19 @@ main {
     letter-spacing: 0.03em;
 }
 
+/* Featured image (--featured-images) */
+.post-featured {
+    margin: 0 0 1.5rem;
+}
+
+.post-featured img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
 /* Category cloud */
 .category-cloud {
     margin-bottom: 2.5rem;
