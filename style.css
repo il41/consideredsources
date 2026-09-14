@@ -537,9 +537,14 @@ main {
     text-decoration: underline;
 }
 
-/* Page type */
+/* Page type — page titles (Resources, About, …) are uppercase sans-serif;
+   post and category titles keep the serif look. */
 .post.page .post-title {
+    font-family: var(--font-ui);
     font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 /* Category cloud */
@@ -709,6 +714,31 @@ mark {
 
     body {
         padding: 1.2rem 1rem;
+    }
+
+    /* Header title + logo: shrink and let the brand wrap so the logo
+       never spills past the content width on small screens. */
+    .site-title {
+        font-size: 1.6rem;
+        gap: 0.6rem;
+        white-space: normal;
+    }
+
+    .site-brand {
+        flex-wrap: wrap;
+    }
+
+    .site-brand-red {
+        font-size: 1.45rem;
+    }
+
+    .site-brand-fg {
+        font-size: 1.6rem;
+    }
+
+    .site-logo {
+        width: 40px;
+        height: 40px;
     }
 
     .post-title {
