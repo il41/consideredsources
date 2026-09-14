@@ -732,8 +732,11 @@ mark {
         font-size: 1.45rem;
     }
 
+    /* Keep the desktop ratio (2.75/2) between the lowercase word and the
+       uppercase word so they read at the same visual height. */
     .site-brand-fg {
-        font-size: 1.6rem;
+        font-size: 1.99rem;
+        line-height: 1;
     }
 
     .site-logo {
