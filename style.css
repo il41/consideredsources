@@ -1,7 +1,7 @@
 /* Considered Sources — static archive stylesheet
-   Default (dark) look: near-black with blue accents, soft paper
-   typography. Readers can switch to light mode via the header toggle
-   (sets <html data-theme="light">). */
+   Default (light) look: white background with black text and blue links.
+   Readers can switch to dark mode via the header toggle
+   (sets <html data-theme="dark">). */
 
 :root {
     --bg: #0f0f0f;
@@ -586,6 +586,23 @@ main {
 
 .category-item a:hover .category-count-num {
     color: inherit;
+}
+
+/* "All Posts" link appended to the cloud on category pages — styled as a
+   plain blue hyperlink rather than a chip. */
+.category-item .all-posts-link {
+    color: var(--accent);
+    background: none;
+    font-weight: 600;
+    padding: 0.15rem 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.category-item .all-posts-link:hover {
+    background: none;
+    color: var(--accent-hover);
+    text-decoration: underline;
 }
 
 /* Category archive page */
